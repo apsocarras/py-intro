@@ -52,8 +52,6 @@ _To run the project from your local system:_
 
 4. Type `git clone ` and paste the URL.
 
-5. Copy and paste the path to `index.html` into your browser's URL bar to open the page.
-
 ## Known Bugs
 
 _No known bugs._
