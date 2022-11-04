@@ -22,11 +22,11 @@ def greatest(d:dict):
   matching_keys = list({key for key in d if d[key] == max_val}) 
   return (max_val, matching_keys[0])
 
-
-
-#     A function called zipper() that takes two lists as arguments
-#         If the lists are the same length:
-#             return a dictionary that has the items of the first list as keys, and each item in the same index in the second list as the value > For instance, the lists ["vanilla", "cherry"] and ["cake", "ice_cream"] would return {"vanilla": "cake", "cherry": "ice_cream"}
-#         If the lists are different lengths:
-#             return a tuple with each list and its length > For instance, the lists ["vanilla", "cherry", "pistachio"] and ["cake", "ice_cream"] would return (["vanilla", "cherry", "pistachio"], 3, ["cake", "ice_cream"], 4)
-
+def zipper(l1:list, l2:list):
+  if len(l1) == len(l2):
+    out_dict = {}
+    for i in range(len(l1)):
+      out_dict[l1[i]] = l2[i]
+    return(out_dict)
+  else: 
+    return (l1, len(l1), l2, len(l2))
