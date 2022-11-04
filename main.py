@@ -17,10 +17,12 @@ def dict_sayer(d:dict):
     print("The dictionary is empty")
     return False
 
+def greatest(d:dict):
+  max_val = max(d.values())
+  matching_keys = list({key for key in d if d[key] == max_val}) 
+  return (max_val, matching_keys[0])
 
-#     A function called greatest() that takes as an argument a dictionary that has strings as keys and integers as values
-#         find the greatest value
-#         return a tuple with the greatest value and its key
+
 
 #     A function called zipper() that takes two lists as arguments
 #         If the lists are the same length:
