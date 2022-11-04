@@ -8,6 +8,14 @@ def list_sayer(ls:list):
     print("The list is empty.")
     return False
 
+def dict_sayer(d:dict): 
+  if len(d) > 0:
+    for key, value in d.items():
+      print(f"Key name: {key}, Value: {value}")
+    return True
+  else:
+    print("The dictionary is empty")
+    return False
 
 
 #     A function called greatest() that takes as an argument a dictionary that has strings as keys and integers as values
