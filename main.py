@@ -9,7 +9,7 @@ def list_sayer(ls:list):
     return False
 
 def dict_sayer(d:dict): 
-  if len(d) > 0: # Empty dictionaries are falsy and non-empty dictionaries falsey, so we could also write 'if d:' 
+  if len(d) > 0: # Empty dictionaries are falsey and non-empty dictionaries truthy, so we could also write 'if d:' 
     for key, value in d.items():
       print(f"Key name: {key}, Value: {value}")
     return True
